@@ -399,7 +399,25 @@ footer ul li {
         align-items: center;
     }
 }
+@media (max-width: 1300px) {
+    main, aside {
+        flex-basis: 100% !important;
+    }
+    .heading-aside-special2 {
+        padding-bottom: 50px;
+    }
+}
+
 @media (max-width: 900px) {
+    main article {
+        flex-basis: 100% !important
+    }
+    input.btn2 {
+        height: 100% !important;
+    }
+    aside {
+        display: none !important;
+    }
     .last {
         flex-basis: 25%;
     }
@@ -410,5 +428,3 @@ footer ul li {
         align-items: center;
     }
 }
-
-/* order */
