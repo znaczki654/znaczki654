@@ -10,6 +10,9 @@
 body {
     font-family: 'Noto Sans', sans-serif;
 }
+body * {
+    font-family: 'Noto Sans', sans-serif;
+}
 /* container flex */
 .container-flex {
     display: flex;
@@ -251,8 +254,8 @@ label.etykieta > input, label.etykieta > textarea {
 .fb-66 {
     flex-basis: 66%;
 }
-.fb-33 {
-    flex-basis: 33%;
+.fb-50 {
+    flex-basis: 50%;
 }
 
 .heading-about-us {
@@ -434,6 +437,9 @@ footer ul li {
     }
     article.categories section summary {
         padding-top: 10%;
+    }
+    article.categories section div img {
+        width: 50%;
     }
 }
 
