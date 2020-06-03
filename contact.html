@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XeDA+ - sklep internetowy</title>
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/contact.css">
     <meta name="author" content="Jan Kustra">
     <meta name="description" content="Chcesz zakupić bezpiecznie z daleka od ludzi, aby nie zarazić się COVID-19 - dobrze trafiłeś.">
     <meta name="keywords" content="shop,sklep,zakupy,xe,xeda,Xe,XeDA+,xeda+,angielski,English,english,computer,komputer,usługi,services">
@@ -22,14 +25,14 @@
             <input class="search-engine" type="search" placeholder="Czego szukasz?">
             <a href="#"><button class="btn"><i class="fa fa-search"></i></button></a>
             <ul class="nav-links">
-                <li><a href="#">Kategorie</a></li>
+                <li><a href="categories">Kategorie</a></li>
             </ul>
-            <a class="cta" href="contact"><button class="btn"><i class="fa fa-phone-alt"></i></button></a>
+            <a class="cta" href="#"><button class="btn"><i class="fa fa-phone-alt"></i></button></a>
             <a class="cta" href="cart"><button class="btn"><i class="fa fa-shopping-basket"></i></button></a>
         </nav>
 
 <!-- header -->
-        <header><h1>Kategorie:</h1></header>
+        <header><h1>Skontaktuj się z nami:</h1></header>
 
 <!-- main -->
         <main class="fb-100 d-flex flex-wrap text-center">
@@ -37,13 +40,26 @@
 
             <article class="fb-75 d-flex flex-wrap categories">
                 <section class="fb-33 d-flex flex-wrap" style="justify-content: center; padding-left: 2.5%; padding-right: 2.5%;">
-                    <details class="fb-100 d-flex flex-wrap">
-                        <summary><h4 class="heading-about-us">Zdalne nauczanie</h4></summary>
-                        <p class="special-text">No może trochę, tych co są wobec Ciebie niesympatyczni. Nasza firma jest skupiona na kliencie i dokładamy wszelkich starań, aby dobrać pogodny i doświadczony zespół.
-                            Dla nas liczy się przede wszystkim dobro klienta oraz satysfakcja z przemyślanego zakupu.</p>
-                    </details>
-                    <div><img width="100%" style="padding-top: 20px; padding-bottom: 15px;" alt="online learning" src="img/onl_learning.png"></div>
-                    <a href="#"><input type="button" class="btn2" value="Zobacz!"></a>
+                    <h4 class="heading-about-us">Formularz kontaktowy</h4>
+                    <form class="d-flex flex-wrap fb-100" action="action_page.php">
+                        <label class="etykieta" for="fname">Imię:
+                            <input class="email-field" type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </label>
+                        <label class="etykieta" for="lname">Nazwisko:
+                            <input class="email-field" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </label>
+                        <label class="etykieta" for="lname">Email:
+                            <input class="email-field" type="email" id="email-2" name="email" placeholder="Your last name..">
+                        </label>
+                        <label class="etykieta" for="lname">Telefon:
+                            <input class="email-field" type="tel" id="tel" name="tel" placeholder="Your last name..">
+                        </label>
+                        <label class="etykieta" for="message">Wiadomość:
+                            <textarea class="email-field" id="message" name="message" placeholder="Napisz coś" style="height:200px; resize: vertical;"></textarea>
+                        </label>
+                        <input class="email-field" type="button" class="btn2" value="Zobacz!">
+
+                      </form>
                 </section>
                 <section class="fb-33 d-flex flex-wrap" style="justify-content: center; padding-left: 2.5%; padding-right: 2.5%;">
                     <details class="fb-100 d-flex flex-wrap">
