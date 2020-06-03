@@ -17,9 +17,9 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 # Custom Error Document Site
 #404
-ErrorDocument 404 https://jankustra3b.000webhostapp.com/404
+    ErrorDocument 404 https://znaczki654.github.io/znaczki654/404
 #403
-ErrorDocument 403 https://jankustra3b.000webhostapp.com/404
+ErrorDocument 403 https://znaczki654.github.io/znaczki654/404
 
 # Deny from all and put a basic apache's website
 #Order deny,allow
