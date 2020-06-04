@@ -40,19 +40,24 @@
                     <h4 class="heading-about-us">Formularz kontaktowy</h4>
                     <form class="d-flex flex-wrap fb-100" style="justify-content: center;" action="action_page.php">
                         <label class="etykieta" for="fname">Imię:
-                            <input class="email-field" type="text" id="fname" name="firstname" placeholder="Twoje imię...">
+                            <input class="email-field" type="text" id="fname" name="firstname" placeholder="Twoje imię..." onblur="this.placeholder = 'Twoje imię...'" onfocus="this.placeholder=''" pattern="^[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\s]+$" maxlength="30" required="required">
                         </label>
                         <label class="etykieta" for="lname">Nazwisko:
-                            <input class="email-field" type="text" id="lname" name="lastname" placeholder="Twoje nazwisko...">
+                            <input class="email-field" type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..." onblur="this.placeholder = 'Twoje nazwisko...'" onfocus="this.placeholder=''" pattern="^[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\s]+$" maxlength="30" required="required">
                         </label>
                         <label class="etykieta" for="lname">Email:
-                            <input class="email-field" type="email" id="email-2" name="email" placeholder="Twój email...">
+                            <input class="email-field" type="email" id="email-2" name="email" placeholder="Twój email..." onblur="this.placeholder = 'Twój email...'" onfocus="this.placeholder=''" maxlength="30" required="required">
                         </label>
                         <label class="etykieta" for="lname">Telefon:
-                            <input class="email-field" type="tel" id="tel" name="tel" placeholder="Numer telefonu...">
+                            <input class="email-field" type="tel" id="tel" name="tel" placeholder="Numer telefonu..." onblur="this.placeholder = 'Nummer telefonu...'" onfocus="this.placeholder=''" pattern="^[0-9]{9}" maxlength="9">
                         </label>
+                        <div class="d-flex flex-wrap fb-100" style="justify-content: center;">
+                            <input class="fb-33" style="align-self: center;" class="etykieta" type="checkbox" id="checkbox-privacy" name="checkbox-privacy" required="required">
+                            <label class="fb-66" style="padding-top: 3px; padding-left: 20px;" for="checkbox-privacy">Zgadzam się na przetwarzanie danych z firmą XeDA+</label>
+                        </div>
+
                         <label class="etykieta" for="message">Wiadomość:
-                            <textarea class="email-field" id="message" name="message" placeholder="Napisz coś" style="height:200px; resize: vertical;"></textarea>
+                            <textarea class="email-field" id="message" name="message" placeholder="Napisz coś" onblur="this.placeholder = 'Napisz coś'" onfocus="this.placeholder=''" required="required" style="height:200px; resize: vertical;"></textarea>
                         </label>
                         <input class="btn2" type="submit" value="Wyślij!" style="padding-left: 30px; padding-right: 30px;">
 
@@ -90,6 +95,20 @@
                     </section>
                 </article>
             </aside>
+            <article class="fb-100 d-flex flex-wrap contact">
+                <section class="fb-50 d-flex flex-wrap" style="justify-content: center; padding-left: 2.5%; padding-right: 2.5%;">
+                    <h4 class="fb-100 heading-about-us">Kontakt:</h4>
+                    <p class="fb-100">XeDA+ Incorporated Departments</p>
+                    <p class="fb-100">Tarnowskie Góry 42-600</p>
+                    <p class="fb-100">ul. Wesoła 65/4</p>
+                    <p class="fb-100">+48 5990348984</p>
+                </section>
+                <section class="fb-50 d-flex flex-wrap" style="justify-content: center;">
+                    <div><img width="100%" style="padding-top: 20px; padding-bottom: 15px;" alt="contact woman" src="img/woman-contact.jpg"></div>
+                </section>
+
+
+            </article>
 
 
 

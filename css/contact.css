@@ -396,6 +396,12 @@ footer ul li {
     display: inline-block;
     padding: 30px 30px 0;
 }
+
+/* contact */
+.contact {
+    padding: 40px;
+    margin-top: 10%;
+}
 @media (max-width: 1322px) {
     .first, .middle {
         flex-basis: 33%;
