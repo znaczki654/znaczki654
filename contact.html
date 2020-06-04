@@ -39,13 +39,13 @@
                 <section class="fb-50 d-flex flex-wrap" style="justify-content: center; padding-left: 2.5%; padding-right: 2.5%;">
                     <h4 class="heading-about-us">Formularz kontaktowy</h4>
                     <form class="d-flex flex-wrap fb-100" style="justify-content: center;" action="action_page.php">
-                        <label class="etykieta" for="fname">Imię:
+                        <label class="etykieta" for="fname">Imię:<span class="required">*</span>
                             <input class="email-field" type="text" id="fname" name="firstname" placeholder="Twoje imię..." onblur="this.placeholder = 'Twoje imię...'" onfocus="this.placeholder=''" pattern="^[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\s]+$" maxlength="30" required="required">
                         </label>
-                        <label class="etykieta" for="lname">Nazwisko:
+                        <label class="etykieta" for="lname">Nazwisko:<span class="required">*</span>
                             <input class="email-field" type="text" id="lname" name="lastname" placeholder="Twoje nazwisko..." onblur="this.placeholder = 'Twoje nazwisko...'" onfocus="this.placeholder=''" pattern="^[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\s]+$" maxlength="30" required="required">
                         </label>
-                        <label class="etykieta" for="lname">Email:
+                        <label class="etykieta" for="lname">Email:<span class="required">*</span>
                             <input class="email-field" type="email" id="email-2" name="email" placeholder="Twój email..." onblur="this.placeholder = 'Twój email...'" onfocus="this.placeholder=''" maxlength="30" required="required">
                         </label>
                         <label class="etykieta" for="lname">Telefon:
@@ -53,14 +53,14 @@
                         </label>
                         <div class="d-flex flex-wrap fb-100" style="justify-content: center;">
                             <input class="fb-33" style="align-self: center;" class="etykieta" type="checkbox" id="checkbox-privacy" name="checkbox-privacy" required="required">
-                            <label class="fb-66" style="padding-top: 3px; padding-left: 20px;" for="checkbox-privacy">Zgadzam się na przetwarzanie danych z firmą XeDA+</label>
+                            <label class="fb-66" style="padding-top: 3px; padding-left: 20px;" for="checkbox-privacy">Zgadzam się na przetwarzanie danych z firmą XeDA+ Incorporated Departments<span class="required">*</span></label>
                         </div>
 
-                        <label class="etykieta" for="message">Wiadomość:
+                        <label class="etykieta" for="message">Wiadomość:<span class="required">*</span>
                             <textarea class="email-field" id="message" name="message" placeholder="Napisz coś" onblur="this.placeholder = 'Napisz coś'" onfocus="this.placeholder=''" required="required" style="height:200px; resize: vertical;"></textarea>
                         </label>
+                        <p class="fb-100"><span class="required">*</span>Wymagane</p>
                         <input class="btn2" type="submit" value="Wyślij!" style="padding-left: 30px; padding-right: 30px;">
-
                       </form>
                 </section>
                 <section class="fb-50 d-flex flex-wrap" style="justify-content: center; padding-left: 2.5%; padding-right: 2.5%;">
