@@ -399,6 +399,14 @@ footer ul li {
 .required {
     color: red;
 }
+p {
+    font-size: 20px;
+    color: #707070;
+    text-align: center;
+}
+p.required-info {
+    font-size: 15px;
+}
 
 /* contact */
 .contact {
